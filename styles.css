@@ -1,0 +1,300 @@
+/* Front Page CSS */
+body {
+    background-color: #0d0d0d; /* Very dark background */
+    color: #00ff00; /* Bright green text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for hacker feel */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #00ff00; /* Green border */
+    border-radius: 10px;
+    background-color: #1a1a1a; /* Darker container background */
+}
+
+
+h1 {
+    font-size: 19vmin;
+    color: #8bf;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+  }
+  
+  /* Typewriter effect 1 */
+  @keyframes typing {
+    0.0000%, 77.5000% { content: ""; }
+    1.0000%, 86.5000% { content: "W"; }
+    2.0000%, 85.5000% { content: "We"; }
+    3.0000%, 94.5000% { content: "Wel"; }
+    4.0000%, 93.5000% { content: "Welc"; }
+    5.0000%, 92.5000% { content: "Welco"; }
+    6.0000%, 91.5000% { content: "Welcom"; }
+    7.0000%, 90.5000% { content: "Welcome"; }
+    8.0000%, 99.0000% { content: "Welcome "; }
+    9.0000%, 98.0000% { content: "Welcome t"; }
+    10.0000%, 97.0000% { content: "Welcome to"; }
+    11.0000%, 96.0000% { content: "Welcome to "; }
+    12.0000%, 95.0000% { content: "Welcome to t"; }
+    13.0000%, 94.0000% { content: "Welcome to th"; }
+    14.0000%, 93.0000% { content: "Welcome to the"; }
+    15.0000%, 92.0000% { content: "Welcome to the "; }
+    16.0000%, 91.0000% { content: "Welcome to the T"; }
+    17.0000%, 90.0000% { content: "Welcome to the Te"; }
+    18.0000%, 89.0000% { content: "Welcome to the Tex"; }
+    19.0000%, 88.0000% { content: "Welcome to the Text"; }
+    20.0000%, 87.0000% { content: "Welcome to the Text "; }
+    21.0000%, 86.0000% { content: "Welcome to the Text E"; }
+    22.0000%, 85.0000% { content: "Welcome to the Text En"; }
+    23.0000%, 84.0000% { content: "Welcome to the Text Enc"; }
+    24.0000%, 83.0000% { content: "Welcome to the Text Encr"; }
+    25.0000%, 82.0000% { content: "Welcome to the Text Encry"; }
+    26.0000%, 81.0000% { content: "Welcome to the Text Encryp"; }
+    27.0000%, 80.0000% { content: "Welcome to the Text Encrypt"; }
+    28.0000%, 79.0000% { content: "Welcome to the Text Encrypti"; }
+    29.0000%, 78.0000% { content: "Welcome to the Text Encryptio"; }
+    30.0000%, 77.0000% { content: "Welcome to the Text Encryption"; }
+    31.0000%, 76.0000% { content: "Welcome to the Text Encryption "; }
+    32.0000%, 75.0000% { content: "Welcome to the Text Encryption T"; }
+    33.0000%, 74.0000% { content: "Welcome to the Text Encryption To"; }
+    34.0000%, 73.0000% { content: "Welcome to the Text Encryption Too"; }
+    35.0000%, 72.0000% { content: "Welcome to the Text Encryption Tool"; }
+}
+
+  
+
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .typewriter {
+    --caret: currentcolor;
+  }
+  
+  .typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+  }
+  
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+  
+  .typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+  }
+  
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+  
+  
+  @media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 12s linear infinite;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+  
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.option {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #009900; /* Darker green on hover */
+}
+
+/* Rest of the Pages CSS */
+body {
+    font-family: 'Courier New', Courier, monospace; /* Terminal-like font */
+    background-color: #0d0d0d; /* Dark background */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    color: #00ff00; /* Bright green text */
+}
+
+.container {
+    text-align: center;
+    background-color: #1a1a1a; /* Slightly lighter dark background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Limit max width */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00; /* Bright green for headings */
+}
+
+textarea {
+    width: 100%;
+    height: 100px; /* Reduced height */
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 2px solid #00ff00; /* Green border */
+    padding: 10px;
+    background: rgba(0, 255, 0, 0.1); /* Slightly transparent green */
+    color: #00ff00; /* Green text */
+    resize: none; /* Disable resizing */
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 2px solid #00ff00; /* Green border */
+    border-radius: 5px;
+    background: rgba(0, 255, 0, 0.1); /* Slightly transparent green */
+    color: #00ff00; /* Green text */
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #28a745; /* Green for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px);
+}
+
+
+
+
+
+
+#encryptButton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #28a745; /* Green border */
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.4s ease;
+  }
+  
+  #encryptButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #28a745; /* Green fill color */
+    z-index: -1;
+    transition: width 0.8s ease;
+  }
+  
+  #encryptButton:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  #encryptButton:hover {
+    color: white; /* Text color remains white */
+  }
+  #loadButton, #decryptButton, #encryptButton {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #28a745; /* Green border */
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.8s ease;
+  }
+  
+  #loadButton::before, #decryptButton::before, #encryptButton::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 100%;
+    background-color: #28a745; /* Green fill color */
+    z-index: -1;
+    transition: width 0.4s ease;
+  }
+  
+  #loadButton:hover::before, #decryptButton:hover::before, #encryptButton:hover::before {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+  
+  #loadButton:hover, #decryptButton:hover, #encryptButton:hover {
+    color: white; /* Text color remains white */
+  }
+  
+
+
+
+
+
+
+
+.back-button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff00; /* Bright green for back button */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #009900; /* Darker green on hover */
+}
